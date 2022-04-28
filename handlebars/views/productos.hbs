@@ -1,0 +1,25 @@
+<div class="container mt-5">
+    <table class="table table-success table-striped table-hover">
+        <thead>
+            <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Producto</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Imagen</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each data}}
+            <tr>
+            <th scope="row">{{this.id}}</th>
+            <td>{{this.title}}</td>
+            <td>${{this.price}}</td>
+            <td><img src="{{this.thumbnail}}" class="img-fluid" alt="..."></td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>
+<div class="container mt-5">
+    <a class="btn btn-primary" href="/">Ir a página principal</a>
+</div>
